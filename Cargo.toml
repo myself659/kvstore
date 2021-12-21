@@ -6,15 +6,16 @@ version = "0.1.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anyhow = "1"
-bytes = "1"
-http = "0.2"
-prost = "0.8"
-sled = "0.34"
-thiserror = "1"
-tokio-rustls = "0.22"
-toml = "0.5"
-yamux = "0.9"
+anyhow = "1" 
+bytes = "1" 
+dashmap = "4" # 并发 HashMap
+http = "0.2" 
+prost = "0.8" 
+sled = "0.34" 
+thiserror = "1" 
+tokio-rustls = "0.22" 
+toml = "0.5" 
+yamux = "0.9" 
 
 [build-dependencies]
 prost-build = "0.8"
