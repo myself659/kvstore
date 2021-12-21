@@ -24,7 +24,7 @@ pub enum KvError {
     #[error("I/O error")]
     IoError(#[from] std::io::Error),
     #[error("TLS error")]
-    TlsError(#[from] tokio-rustls::rustls::TLSError),
+    TlsError(#[from] tokio_rustls::rustls::TLSError),
     #[error("Yamux Connection error")]
     YamuxConnectionError(#[from] yamux::ConnectionError),
     #[error("Parse config error")]
