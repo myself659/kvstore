@@ -10,6 +10,7 @@ anyhow = "1"
 bytes = "1"
 prost = "0.8"
 thiserror = "1"
+tokio-rustls = "0.22"
 
 [build-dependencies]
 prost-build = "0.8"
