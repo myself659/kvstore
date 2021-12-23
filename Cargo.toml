@@ -10,7 +10,7 @@ anyhow = "1"
 bytes = "1" 
 dashmap = "4" # 并发 HashMap
 flate2 = "1" # gzip 压缩
-futures = "0.1.31" # 提供 Stream trait
+futures = "0.3.19" # 提供 Stream trait
 http = "0.2" 
 prost = "0.8" 
 serde = {version = "1", features = ["derive"]}# 序列化/反序列化 

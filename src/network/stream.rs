@@ -1,7 +1,7 @@
 use bytes::BytesMut;
 use futures::{ready, FutureExt, Sink, Stream};
 use std::{
-    maker::PhantomData,
+    marker::PhantomData,
     pin::Pin,
     task::{Context, Poll},
 };

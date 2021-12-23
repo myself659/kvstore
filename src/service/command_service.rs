@@ -1,3 +1,4 @@
+use crate::service::CommandService;
 use crate::*;
 
 impl CommandService for Hget {

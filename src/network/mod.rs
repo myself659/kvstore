@@ -9,7 +9,7 @@ pub use stream::ProstStream;
 pub use stream_result::StreamResult;
 
 use crate::{CommandRequest, CommandResponse, KvError, Service, Storage};
-// use futures::{SinkExt, StreamExt};
+use futures::{SinkExt, StreamExt};
 use tokio::io::{AsyncRead, AsyncWrite};
 use tracing::info;
 
@@ -19,7 +19,7 @@ pub struct ProstServerStream<S, Store> {
 }
 
 pub struct ProstClientStream<S> {
-    inner: ProstStream<S, CommandRequest, CommandResponse>,
+    inner: ProstStream<S, CommandResponse, CommandRequest>,
 }
 
 impl<S, Store> ProstServerStream<S, Store>
