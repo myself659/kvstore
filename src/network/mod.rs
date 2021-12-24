@@ -2,11 +2,13 @@ mod frame;
 mod multiplex;
 mod stream;
 mod stream_result;
+mod tls;
 
 pub use frame::{read_frame, FrameCoder};
 pub use multiplex::YamuxCtrl;
 pub use stream::ProstStream;
 pub use stream_result::StreamResult;
+pub use tls::{TlsClientConnector, TlsServerAcceptor};
 
 use crate::{CommandRequest, CommandResponse, KvError, Service, Storage};
 use futures::{SinkExt, StreamExt};
