@@ -54,3 +54,10 @@ tempfile = "3" # 处理临时目录和临时文件
 
 [build-dependencies]
 prost-build = "0.8"
+
+[[bench]]
+harness = false
+name = "pubsub"
+
+[profile.bench]
+debug = true
