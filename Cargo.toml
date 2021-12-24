@@ -7,6 +7,10 @@ version = "0.1.0"
 name = "gen_cert"
 path = "tools/gen_cert.rs"
 
+[[bin]]
+name = "gen_config"
+path = "tools/gen_config.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
