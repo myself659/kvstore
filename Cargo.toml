@@ -4,6 +4,14 @@ name = "kvstore"
 version = "0.1.0"
 
 [[bin]]
+name = "kvs"
+path = "src/server.rs"
+
+[[bin]]
+name = "kvc"
+path = "src/client.rs"
+
+[[bin]]
 name = "gen_cert"
 path = "tools/gen_cert.rs"
 
@@ -21,6 +29,7 @@ dashmap = "4" # 并发 HashMap
 flate2 = "1" # gzip 压缩
 futures = "0.3.19" # 提供 Stream trait
 http = "0.2" 
+opentelemetry-jaeger = "0.15" 
 prost = "0.8" 
 rustls-native-certs = "0.5" 
 serde = {version = "1", features = ["derive"]}# 序列化/反序列化 
