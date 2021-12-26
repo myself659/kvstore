@@ -11,7 +11,7 @@ use tracing::info;
 async fn main() -> Result<()> {
     tracing_subscriber::fmt::init();
     let config: ClientConfig = toml::from_str(include_str!("../fixtures/client.conf"))?;
-
+    println!("client config: {:?}", config);
     // 打开一个 yamux ctrl
     let mut ctrl = start_client_with_config(&config).await?;
 

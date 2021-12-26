@@ -19,6 +19,7 @@ async fn main() -> Result<()> {
         Err(_) => include_str!("../fixtures/server.conf").to_string(),
     };
     let config: ServerConfig = toml::from_str(&config)?;
+    println!("server congfig: {:?}", config);
     let log = &config.log;
 
     env::set_var("RUST_LOG", &log.log_level);
