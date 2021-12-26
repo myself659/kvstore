@@ -26,7 +26,7 @@ where
         buf.put_u32(size as _);
         if size > COMPRESSION_LIMIT {
             let mut buf1 = Vec::with_capacity(size);
-            self.encode(&mut buf1);
+            self.encode(&mut buf1)?;
 
             let payload = buf.split_off(LEN_LEN);
             buf.clear();
