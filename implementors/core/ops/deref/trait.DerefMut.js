@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["kvstore"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.57.0/core/ops/deref/trait.DerefMut.html\" title=\"trait core::ops::deref::DerefMut\">DerefMut</a> for <a class=\"struct\" href=\"kvstore/struct.StreamResult.html\" title=\"struct kvstore::StreamResult\">StreamResult</a>","synthetic":false,"types":["kvstore::network::stream_result::StreamResult"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
